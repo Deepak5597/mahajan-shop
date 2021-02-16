@@ -1,0 +1,11 @@
+<ms-header (sidebarState)="sidebarStateChanged($event)"></ms-header>
+<div class="container-fluid p-0 m-0">
+  <div class="row no-gutters">
+    <div class="col-auto">
+      <ms-sidebar [sidebarState]="isSidebarClosed"></ms-sidebar>
+    </div>
+    <div class="col w-100">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

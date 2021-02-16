@@ -1,0 +1,5 @@
+<nav class="navbar sticky-top top-nav">
+    <a class="navbar-brand" href="javascript:void(0)">Mahajan Electronics</a>
+    <i class="fas fa-bars ml-3 mr-auto nav-icons" *ngIf="!isSidebarClosed" (click)="changeSidebarState()"></i>
+    <i class="fas fa-times ml-3 mr-auto nav-icons" *ngIf="isSidebarClosed" (click)="changeSidebarState()"></i>
+</nav>

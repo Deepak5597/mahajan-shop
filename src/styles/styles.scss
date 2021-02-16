@@ -1,0 +1,107 @@
+@import "_variables";
+@import "global";
+
+/** Header CSS starts*/
+
+.top-nav{
+  background-color:$theme-bg-dark;
+  a{
+    color:White;
+  }
+  .nav-icons{
+    margin-right: 1rem;
+    color: white;
+    font-size: 1.4rem;
+  }
+}
+
+/** Header CSS ends*/
+
+/** Sidenav CSS starts*/
+.user-display-wrapper{
+  height: 166px;
+  @include flex-column-horizontal-vertical-center;
+  background-color: $theme-dark-background;
+  .img-box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width:100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  span{
+    color:white;
+    margin-top:0.5rem;
+  }
+}
+.side-nav{
+  width:17rem;
+  height: 100vh;
+  background-color: $side-nav-bg-color;
+  .side-nav-list-item{
+    .side-nav-links{
+      color: $theme-bg-dark;
+      padding: 1rem 2rem;
+      display: table;
+      width: 100%;
+      font-size: 1.2rem;
+      i{
+        float: left;
+        font-size: 1.2rem;
+        padding: 4px 0px;
+        margin-right: 2rem;
+      }
+    }
+  }
+  .side-nav-list-item-active{
+    background: $bg-light-white;
+    .side-nav-links{
+      font-weight: 700;
+    }
+  }
+}
+
+.nav-hide{
+  margin-left:-17rem;
+  transition: 0.9s ease-in ;
+}
+
+/** Sidenav CSS ends*/
+
+
+/** Main content css starts*/
+
+.action-header{
+  @include flex-row-vertical-center;
+  justify-content: space-between;
+  background-color: $action-header-color;
+  height:3.2rem;
+  padding: 0rem 3rem;
+  box-shadow: 5px 3px 5px #c6c6c6;
+  h6{
+    margin: 0;
+  }
+
+  .action-links-wrapper{
+    .action-links{
+      color: white;
+      padding: 0.3rem 0.8rem;
+      margin-right: 1rem;
+      border-radius: 5px;
+      &:last-child{
+        margin-right: 0px;
+      }
+
+      i{
+        font-size: 1rem;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/** Main content css ends*/

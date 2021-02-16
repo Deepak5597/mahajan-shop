@@ -1,0 +1,24 @@
+<div class="nav-wrapper" [ngClass]="{'nav-hide':isSidebarClosed}">
+  <div class="user-display-wrapper">
+    <div class="img-box">
+      <img src="../../../assets/passport_size_pic.PNG" alt="user-profile">
+    </div>
+    <span>Deepak Bisht</span>
+  </div>
+  <nav class="side-nav">
+      <ul>
+        <li class="side-nav-list-item" routerLink="/dashboard" routerLinkActive="side-nav-list-item-active">
+          <a href="javascript:void(0)" class="side-nav-links"> <i class="fas fa-chart-line"></i> Dashboard</a>
+        </li>
+        <li class="side-nav-list-item" routerLink="/items/list" routerLinkActive="side-nav-list-item-active">
+          <a href="javascript:void(0)" class="side-nav-links"><i class="fas fa-sitemap"></i>Items</a>
+        </li>
+        <li class="side-nav-list-item" routerLink="/parties" routerLinkActive="side-nav-list-item-active">
+          <a href="javascript:void(0)" class="side-nav-links"><i class="fas fa-hands-helping"></i>Parties</a>
+        </li>
+        <li class="side-nav-list-item" routerLink="/transactions" routerLinkActive="side-nav-list-item-active">
+          <a href="javascript:void(0)" class="side-nav-links"><i class="fas fa-rupee-sign"></i>Transactions</a>
+        </li>
+      </ul>
+  </nav>
+</div>
